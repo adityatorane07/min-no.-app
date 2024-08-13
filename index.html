@@ -1,0 +1,88 @@
+<html>
+	<head>
+
+		<title> min finder app by kamal sir </title>
+		<style>
+			*{font-size:50px;font-family:cambria;}
+			body {background-color:linen;}
+		</style>
+	</head>
+
+	<body>
+		<center>
+			<h1> min finder app </h1>
+			<form onsubmit="find()">
+	<input type="number" step="any"id="num1"placeholder="enter first number"/>
+			<br/><be/>
+	<input type="number" step="any"id="num2"placeholder="enter second number"/>
+			<br/><br/>
+			<input type="submit" value="m1"/>
+			<input type="submit" value="m2"/>
+			<input type="submit" value="m3"/>
+		</form>
+			<h2 id="msg"/>
+			
+		<script>
+			
+			function find()
+			{ 
+				event.preventDefault();
+				let num1=document.getEelementById("num1");
+				let num1=document.getEelementById("num2");
+				let msg=document.getElementById("msg");
+				let action=document.activeElement.value;
+
+				if (num1.value==="")
+				{
+					alert("u did not enter first number");
+					msg.innerHTML="";
+					num2.focus();
+					return;
+				}
+				
+				let n1=parseFloat(num1.value);
+				let n2=praseFloat(num2.value);
+
+				if(action==="m1")
+				{
+					let ans=n1<n2?"min="+n1:"min="+n2;
+					msg.innerHTML="m1==>"+ans;
+				}
+				eles if (action==="m2")
+				{
+					let ans="";
+					if(n1<n2)
+						ans="min="+n1;
+				eles 
+						ans="min="+n2;
+				msg.innerHTML="m2==>"=+ans;
+				}
+				eles if(action==="m3")
+				{
+					//u do it-->and msg me when u did it
+				}	
+			
+			}
+		</script>
+	</center>
+	</body>
+</html>
+	
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
